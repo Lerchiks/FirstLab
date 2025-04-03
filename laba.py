@@ -175,7 +175,7 @@ class Greenhouse:
                 logs += (f'\n[{default_hrs(self.time_exists)}:{default_mns(self.time_exists)}]{type_plant(plant)} {plant.name} имеет критические показатели воды.')
             if plant.catch_err()[1] and plant.catch_err()[2] != 1: 
                 catch = True
-                logs += (f'[{default_hrs(self.time_exists)}:{default_mns(self.time_exists)}]{type_plant(plant)} {plant.name} имеет критические показатели света.')
+                logs += (f'\n[{default_hrs(self.time_exists)}:{default_mns(self.time_exists)}]{type_plant(plant)} {plant.name} имеет критические показатели света.')
         else:
             if used[0]: 
                 catch = True
