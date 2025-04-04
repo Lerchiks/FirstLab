@@ -429,7 +429,7 @@ class Orchid(Plant):
             if self.grow_status >= 100:
                 if self.catch_days == None: 
                     self.catch_days = self.life
-                    self.evol_days -= 1
+                    #self.evol_days -= 1
                     logs += (f'\n{' ' * 50}[{default_hrs(time)}:{default_mns(time)}]')
                     logs += (f'\n{' ' * 20}{'&' * 4}   [Орхидея {self.name} умрет естественной смертью через {self.evol_days} дней]   {'&' * 4}\n')
 
